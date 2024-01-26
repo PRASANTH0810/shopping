@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="https://img.freepik.com/free-vector/illustration-creative-ideas-concept-icon_53876-7975.jpg?size=626&ext=jpg&uid=R99655961&ga=GA1.1.252722421.1704870538&semt=ais" alt="Logo">
+        <h1>Prasanth's Footwear Store</h1>
+        <br>
+        <h2>Choose your favorite footwear</h2>
+        <div id="cart">
+            <button onclick="decreaseCart()">-</button>
+            <span class="cart-count" id="cart-count">0</span>
+            <button onclick="increaseCart()">+</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sneakers">Sneakers</a></li>
+            <li><a href="#casuals">Casuals</a></li>
+            <li><a href="#formals">Formals</a></li>
+            <li><a href="#boots">Boots</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Products go here -->
+        <div class="product" id="sneakers" onclick="addToCart('Sneakers', 39.99)">
+            <img src="https://img.freepik.com/free-photo/fashion-shoes-sneakers_1203-7529.jpg?size=626&ext=jpg&ga=GA1.2.252722421.1704870538&semt=sph" alt="Sneakers Image">
+            <p>Sneakers</p>
+            <p>$39.99</p>
+        </div>
+<br>
+        <div class="product" id="casuals" onclick="addToCart('Casuals', 29.99)">
+            <img src="https://img.freepik.com/free-photo/men-shoes_1203-8433.jpg?size=626&ext=jpg&uid=R99655961&ga=GA1.1.252722421.1704870538&semt=ais" alt="Casuals Image">
+            <p>Casuals</p>
+            <p>$29.99</p>
+        </div>
+<br>
+        <div class="product" id="formals" onclick="addToCart('Formals', 49.99)">
+            <img src="https://img.freepik.com/free-photo/black-leather-shoes_1203-8182.jpg?size=626&ext=jpg&uid=R99655961&ga=GA1.1.252722421.1704870538&semt=ais" alt="Formals Image">
+            <p>Formals</p>
+            <p>$49.99</p>
+        </div>
+<br>
+        <div class="product" id="boots" onclick="addToCart('Boots', 19.99)">
+            <img src="https://img.freepik.com/free-photo/leather-boots_1203-8147.jpg?size=626&ext=jpg&uid=R99655961&ga=GA1.1.252722421.1704870538&semt=sph" alt="Boots Image">
+            <p>Boots</p>
+            <p>$19.99</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="social-media-icons">
+            <a href="https://www.facebook.com/profile.php?id=100007992497032" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://twitter.com/koalakalap10126" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/prasanthreddykolakalapudi/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/prasanth-reddy-kolakalapudi-8715bb17b/" class="fa fa-linkedin" target="_blank"></a>
+        </div>
+        <p>Follow us on social media!</p>
+    </footer>
+
+</body>
+
+</html>
